@@ -78,6 +78,10 @@ return [
     'view_updates' => 'View updates',
     'perform_updates' => 'Perform updates',
 
+    'group_graphql' => 'GraphQL',
+    'configure_graphql' => 'Configure graphql',
+    'configure_graphql_desc' => 'Grants access to view graphql in the menu',
+
     'group_utilities' => 'Utilities',
     'access_utility' => ':title',
     'access_utility_desc' => 'Grants access to the :title utility',

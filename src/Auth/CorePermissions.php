@@ -53,6 +53,12 @@ class CorePermissions
             $this->registerForms();
         });
 
+        if (config('statamic.graphql.enabled')) {
+            $this->group('graphql', function () {
+                $this->registerGraphQL();
+            });
+        }
+        
         $this->group('utilities', function () {
             $this->registerUtilities();
         });
@@ -187,6 +193,11 @@ class CorePermissions
                 });
             });
         });
+    }
+
+    protected function registerGraphQL()
+    {
+        $this->register('configure graphql');
     }
 
     protected function registerUtilities()
